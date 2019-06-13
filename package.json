@@ -1,0 +1,15 @@
+{
+  "name": "nodejs_workspace",
+  "version": "1.0.0",
+  "description": "NodeJS begin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "victor",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^1.1.0"
+  }
+}
