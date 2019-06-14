@@ -2,14 +2,15 @@
   "name": "nodejs_workspace",
   "version": "1.0.0",
   "description": "NodeJS begin",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "victor",
   "license": "ISC",
   "dependencies": {
-    "johnny-five": "^1.1.0"
+    "johnny-five": "^1.1.0",
+    "nodebots-interchange": "^1.3.0"
   }
 }
