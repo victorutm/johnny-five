@@ -17,30 +17,19 @@ function initialize() {
     }
   });
 
-  const sensor00 = new five.Proximity({
+  const Ultrasonic1 = new five.Proximity({
     controller: "HCSR04",
     pin: "A0"
   });
 
-  const sensor01 = new five.Proximity({
+  const Ultrasonic2 = new five.Proximity({
     controller: "HCSR04",
     pin: "A1"
   });
 
-  const sensor10 = new five.Proximity({
-    controller: "HCSR04",
-    pin: "A2"
-  });
+  const sensorHall = new five.Sensor.Digital(2);
 
-  const sensor11 = new five.Proximity({
-    controller: "HCSR04",
-    pin: "A3"
-  });
-
-  return { left, right, sensor00, sensor01, sensor10, sensor11 };
+  return { left, right, Ultrasonic1, Ultrasonic2, sensorHall };
 }
 
 module.exports = initialize;
-
-// y cuando lo ocupas haces
-// import {leftMotor, rightMotor} from 'config';

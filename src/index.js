@@ -12,7 +12,8 @@ board.on("ready", function() {
   const init = require("./Initialize")();
   const leftMotor = init.left;
   const rightMotor = init.right;
-  const frontSensor = init.sensor00;
+  const frontSensor = init.Ultrasonic1;
+  const sensorHAll = init.sensorHall;
   board.repl.inject({
     leftMotor: leftMotor,
     rightMotor: rightMotor
